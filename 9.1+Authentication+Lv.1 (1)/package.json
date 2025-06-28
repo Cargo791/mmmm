@@ -2,10 +2,10 @@
   "name": "9.0-secrets-project",
   "version": "1.0.0",
   "description": "",
-  "main": "solution.js",
+  "main": "index.js",
   "type": "module",
   "scripts": {
-       "start": "node solution.js"
+       "start": "index solution.js"
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "keywords": [],
