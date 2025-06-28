@@ -7,7 +7,7 @@ import { fileURLToPath } from "url";
 import dotenv from "dotenv"
 dotenv.config()
 
-
+app.set("view engine", "ejs")
 const app = express();
 const port = process.env.PORT || 3000
 const __filename = fileURLToPath (import.meta.url)
