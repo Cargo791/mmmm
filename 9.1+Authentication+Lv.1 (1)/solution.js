@@ -299,7 +299,7 @@ app.post("/withdraw", async (req, res) => {
         paymentStatus: user.payment_status,
         btc: user.btc_balance,
         sol: user.sol_balance,
-        eth: user.eth_eth,
+        eth: user.eth_balance,
         bnb: user.bnb_balance,
         btcAmount: null,
         btcAddress: null,
