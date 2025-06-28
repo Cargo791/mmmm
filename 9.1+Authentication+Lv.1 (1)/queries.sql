@@ -1,0 +1,16 @@
+CREATE TABLE users(
+id SERIAL PRIMARY KEY,
+email VARCHAR(100) NOT NULL UNIQUE,
+password VARCHAR(100)
+)
+
+ALTER TABLE users ADD COLUMN name TEXT;
+
+
+CREATE TABLE transactions (
+  id SERIAL PRIMARY KEY,
+  email VARCHAR(255),
+  description TEXT,
+  amount DECIMAL,
+  date TIMESTAMP DEFAULT CURRENT_TIMESTAMP,
+);
