@@ -7,8 +7,9 @@ import { fileURLToPath } from "url";
 import dotenv from "dotenv"
 dotenv.config()
 
-app.set("view engine", "ejs")
+
 const app = express();
+app.set("view engine", "ejs")
 const port = process.env.PORT || 3000
 const __filename = fileURLToPath (import.meta.url)
 const __dirname = path.dirname(__filename)
@@ -62,7 +63,7 @@ app.post("/register", async (req, res) => {
            paymentStatus: 'none',
            btc:user.btc_balance,
            sol:user.sol_balance,
-           eth:user.eth_eth,
+           eth:user.eth_balance,
            bnb:user.bnb_balance,
            btcAmount: null,
            btcAddress: null,
